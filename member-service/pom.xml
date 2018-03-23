@@ -54,12 +54,6 @@
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 			<version>1.3.2.RELEASE</version>
 		</dependency>
-
-		<dependency>
-			<groupId>cn.yzlee</groupId>
-			<artifactId>common-utils</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
