@@ -15,7 +15,7 @@ import java.util.List;
  * @Date: 2018/3/23 15:35
  * @Desc:
  **/
-@Repository(value="goodsDAO")
-public class GoodsDAOImpl extends HibernateBaseDaoImpl<Goods> implements GoodsDAO
+@Repository("goodsDAO")
+public class GoodsDAOImpl
 {
 }

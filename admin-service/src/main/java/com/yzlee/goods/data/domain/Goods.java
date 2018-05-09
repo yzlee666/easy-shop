@@ -28,7 +28,7 @@ public class Goods extends SuperObject
     private UUID id;
 
     @NaturalId(mutable = true)
-    @Column(length = 32,nullable = false,columnDefinition = ("comment '商品编码'"))
+    @Column(length = 32,nullable = false,columnDefinition = ("varchar(32) comment '商品编码'"))
     private String code;
 
     @Column(length = 64,nullable = false,columnDefinition=("varchar(64) comment '商品名称'"))
@@ -46,16 +46,16 @@ public class Goods extends SuperObject
     @Column(name="on_shelf",nullable = false,columnDefinition = ("tinyint(1) comment '是否上架'"))
     private Boolean onShelf;
 
-    @Column(name="cost_price",columnDefinition = ("comment '商品原价格'"))
+    @Column(name="cost_price")
     private BigDecimal costPrice;
 
-    @Column(name="price",columnDefinition = ("comment '商品销售价格'"))
+    @Column(name="price")
     private BigDecimal price;
 
-    @Column(name="stock",columnDefinition = ("comment '商品库存'"))
+    @Column(name="stock")
     private long stock;
 
-    @Column(name="sale_num",columnDefinition = ("comment '商品销售数量'"))
+    @Column(name="sale_num")
     private long saleNum;
 
     public UUID getId() {

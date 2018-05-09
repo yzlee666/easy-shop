@@ -15,6 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value="/admin/goods")
 public class ManageGoodsQueryController
 {
+
+    @GetMapping(value="/aa.html")
+    public String toHeHe(){
+        System.out.println("DSfdsf");
+        return "/login";
+    }
+
     @GetMapping(value="/list.html")
     public void list(){
     }
