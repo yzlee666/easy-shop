@@ -1,7 +1,5 @@
 package com.yzlee.goods.manage.controller;
 
-import com.yzlee.goods.data.dao.GoodsDAO;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,14 +17,11 @@ public class ManageGoodsQueryController
     @GetMapping(value="/aa.html")
     public String toHeHe(){
         System.out.println("DSfdsf");
-        return "/login";
+        return "goods/test";
     }
 
     @GetMapping(value="/list.html")
     public void list(){
     }
-
-    @Autowired
-    private GoodsDAO goodsDAO;
 
 }
